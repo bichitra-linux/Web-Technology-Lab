@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .booking-form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .booking-form label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+
+        .booking-form input[type="text"],
+        .booking-form input[type="email"],
+        .booking-form input[type="tel"],
+        .booking-form input[type="datetime-local"],
+        .booking-form select,
+        .booking-form textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .booking-form input[type="radio"],
+        .booking-form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .booking-form label.inline {
+            display: inline;
+        }
+
+        .booking-form .submit-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .booking-form .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="booking-form">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Which taxi do you require?</label>
+            <input type="radio" id="car" name="taxi" value="Car" required>
+            <label for="car" class="inline">Car</label><br>
+            <input type="radio" id="van" name="taxi" value="Van">
+            <label for="van" class="inline">Van</label><br>
+            <input type="radio" id="tuk-tuk" name="taxi" value="Tuk Tuk">
+            <label for="tuk-tuk" class="inline">Tuk Tuk</label>
+
+            <label>Extras</label>
+            <input type="checkbox" id="baby-seat" name="extras" value="Baby Seat">
+            <label for="baby-seat" class="inline">Baby Seat</label><br>
+            <input type="checkbox" id="wheelchair-access" name="extras" value="Wheelchair Access">
+            <label for="wheelchair-access" class="inline">Wheelchair Access</label><br>
+            <input type="checkbox" id="stock-tip" name="extras" value="Stock Tip">
+            <label for="stock-tip" class="inline">Stock Tip</label>
+
+            <label for="pickup-datetime">Pickup Date/Time</label>
+            <input type="datetime-local" id="pickup-datetime" name="pickup-datetime" required>
+
+            <label for="pickup-place">Pickup Place</label>
+            <select id="pickup-place" name="pickup-place" required>
+                <option value="">Select One</option>
+                <option value="Place 1">Place 1</option>
+                <option value="Place 2">Place 2</option>
+                <option value="Place 3">Place 3</option>
+            </select>
+
+            <label for="dropoff-place">Dropoff Place</label>
+            <input type="text" id="dropoff-place" name="dropoff-place" required>
+
+            <label for="special-instructions">Special Instructions</label>
+            <textarea id="special-instructions" name="special-instructions" rows="4"></textarea>
+
+            <button type="submit" class="submit-button">Submit Booking</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
