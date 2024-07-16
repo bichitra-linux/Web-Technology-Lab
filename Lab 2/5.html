@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        First name: <input type="text" id="firstname"><br>
+        Middle name: <input type="text" id="middlename"><br>
+        Last name: <input type="text" id="lastname"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("firstname").value;
+            var middleName = document.getElementById("middlename").value;
+            var lastName = document.getElementById("lastname").value;
+            
+            if (firstName === "" || middleName === "" || lastName === "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

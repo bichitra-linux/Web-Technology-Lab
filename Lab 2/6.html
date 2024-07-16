@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON to JS Variable</title>
+</head>
+<body>
+    <script>
+        var jsonArray = '[{"firstname": "John", "lastname": "Doe"}, {"firstname": "Jane", "lastname": "Smith"}]';
+        var jsArray = JSON.parse(jsonArray);
+        document.write("First element's first name: " + jsArray[0].firstname + "<br>");
+        document.write("First element's last name: " + jsArray[0].lastname);
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "2_students.dtd">
+<students>
+    <student>
+        <name>John Doe</name>
+        <age>21</age>
+        <gender>Male</gender>
+        <faculty>Computer Science</faculty>
+        <address>123 Main St, Anytown, USA</address>
+    </student>
+    <student>
+        <name>Jane Smith</name>
+        <age>22</age>
+        <gender>Female</gender>
+        <faculty>Mathematics</faculty>
+        <address>456 Maple Ave, Anytown, USA</address>
+    </student>
+    <student>
+        <name>Mike Brown</name>
+        <age>20</age>
+        <gender>Male</gender>
+        <faculty>Physics</faculty>
+        <address>789 Oak St, Anytown, USA</address>
+    </student>
+    <student>
+        <name>Lisa White</name>
+        <age>23</age>
+        <gender>Female</gender>
+        <faculty>Chemistry</faculty>
+        <address>101 Pine St, Anytown, USA</address>
+    </student>
+    <student>
+        <name>Tom Green</name>
+        <age>21</age>
+        <gender>Male</gender>
+        <faculty>Biology</faculty>
+        <address>202 Birch St, Anytown, USA</address>
+    </student>
+</students>

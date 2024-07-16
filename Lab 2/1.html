@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Date and Time</title>
+</head>
+<body>
+    <button onclick="displayDateTime()">Click me to display Date and Time</button>
+    <p id="dateTime"></p>
+
+    <script>
+        function displayDateTime() {
+            var now = new Date();
+            document.getElementById("dateTime").innerHTML = now.toString();
+        }
+    </script>
+</body>
+</html>
