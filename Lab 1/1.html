@@ -27,7 +27,7 @@
             text-align: center;
         }
         .complex-table {
-            margin-top: 20px;
+            /*margin-top: 20px;*/
             border: 1px solid black;
             padding: 10px;
         }
@@ -37,17 +37,17 @@
 
 <table>
     <tr>
-        <th colspan="2" class="no-border">Invoice #123456789</th>
-        <th colspan="2" class="text-right no-border">14 January 2025</th>
+        <th colspan="2" /*class="no-border"*/>Invoice #123456789</th>
+        <th colspan="2" class="text-right">14 January 2025</th>
     </tr>
     <tr>
-        <td colspan="2" class="no-border">
+        <td colspan="2" /*class="no-border"*/>
             <strong>Pay to:</strong><br>
             Acme Billing Co.<br>
             123 Main St.<br>
             Cityville, NA 12345
         </td>
-        <td colspan="2" class="no-border">
+        <td colspan="2" class="text-right">
             <strong>Customer:</strong><br>
             John Smith<br>
             321 Willow Way<br>
@@ -80,8 +80,9 @@
         <td>110.00</td>
     </tr>
     <tr>
-        <td colspan="3" class="text-right"><strong>Tax</strong></td>
+        <td colspan="2" class="text-right"><strong>Tax</strong></td>
         <td>8%</td>
+        <td>8.80</td>
     </tr>
     <tr>
         <td colspan="3" class="text-right"><strong>Grand Total</strong></td>
