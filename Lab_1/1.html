@@ -3,60 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice Table</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .no-border {
-            border: none;
-        }
-        .text-right {
-            text-align: right;
-        }
-        .text-center {
-            text-align: center;
-        }
-        .complex-table {
-            /*margin-top: 20px;*/
-            border: 1px solid black;
-            padding: 10px;
-        }
-    </style>
+    <title>A Complex Table</title>
 </head>
 <body>
 
-<table>
+<h2>A complex table</h2>
+
+<table border="1" cellpadding="5">
     <tr>
-        <th colspan="3" /*class="no-border"*/>Invoice #123456789</th>
-        <th colspan="1" class="text-right">14 January 2025</th>
+        <td colspan="3">Invoice #123456789</td>
+        <td colspan="1" align="right">14 January 2025</td>
     </tr>
     <tr>
-        <td colspan="3" /*class="no-border"*/>
+        <td colspan="2">
             <strong>Pay to:</strong><br>
             Acme Billing Co.<br>
             123 Main St.<br>
             Cityville, NA 12345
         </td>
-        <td colspan="1" class="">
+        <td colspan="2">
             <strong>Customer:</strong><br>
             John Smith<br>
             321 Willow Way<br>
-            Southeast Northwesterhire, MA 54321
+            Southeast Northwestershire, MA 54321
         </td>
     </tr>
-</table>
-
-<table class="complex-table">
     <tr>
         <th>Name / Description</th>
         <th>Qty.</th>
@@ -76,17 +47,17 @@
         <td>100.00</td>
     </tr>
     <tr>
-        <td colspan="3" class="text-right"><strong>Subtotal</strong></td>
+        <td colspan="3" align="right">Subtotal</td>
         <td>110.00</td>
     </tr>
     <tr>
-        <td colspan="2" class="text-right"><strong>Tax</strong></td>
+        <td colspan="2" align="right">Tax</td>
         <td>8%</td>
         <td>8.80</td>
     </tr>
     <tr>
-        <td colspan="3" class="text-right"><strong>Grand Total</strong></td>
-        <td>$118.80</td>
+        <td colspan="3" align="right">Grand Total</td>
+        <td>118.80</td>
     </tr>
 </table>
 
