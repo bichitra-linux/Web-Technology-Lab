@@ -16,6 +16,7 @@
       {
         "duplicate-id": "off"
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }
